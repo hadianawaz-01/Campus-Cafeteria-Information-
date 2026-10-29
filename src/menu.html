@@ -1,137 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu | Campus Bites</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | Menu</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body class="menu-body">
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Campus Bites</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="order.html">How to Order</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header class="site-header">
-    <a class="brand" href="index.html">Campus Bites</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Menu</a>
-      <a href="deals.html">Deals</a>
-      <a href="order.html">How to Order</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
-  </header>
+    <main>
+        <h1 class="page-title">Cafeteria Menu Plan</h1>
+        <p style="text-align: center; color: #555; margin-bottom: 2rem;">Fresh food choices categorized perfectly for UCP students and faculty members.</p>
+        
+        <!-- Category 1: Breakfast -->
+        <h2 class="category-title">🍳 Breakfast (Served till 11:00 AM)</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Aloo Paratha</h3>
+                <p>Freshly rolled whole-wheat paratha stuffed with spicy seasoned mashed potatoes.</p>
+                <p class="price">PKR 90</p>
+            </div>
+            <div class="card">
+                <h3>Omelette & Toast</h3>
+                <p>Two eggs whisked with fresh green chilies, onions, and pan-toasted bread slices.</p>
+                <p class="price">PKR 120</p>
+            </div>
+            <div class="card">
+                <h3>Chana Puri Plate</h3>
+                <p>Two fluffy, deep-fried puris served with traditional savory chickpea curry.</p>
+                <p class="price">PKR 160</p>
+            </div>
+        </div>
 
-  <section class="menu-hero">
-    <h2>Today's menu</h2>
-    <p>Fresh food, student-friendly prices. All prices are in PKR.</p>
-    <div class="menu-jump">
-      <a href="#breakfast">Breakfast</a>
-      <a href="#fast-food">Fast Food</a>
-      <a href="#main-course">Main Course</a>
-      <a href="#beverages-desserts">Beverages &amp; Desserts</a>
-    </div>
-  </section>
+        <!-- Category 2: Fast Food -->
+        <h2 class="category-title">🍔 Fast Food Favorites</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Crispy Zinger Burger</h3>
+                <p>Crunchy golden-fried chicken breast fillet topped with lettuce and creamy mayonnaise.</p>
+                <p class="price">PKR 320</p>
+            </div>
+            <div class="card">
+                <h3>Chicken Shawarma Wrap</h3>
+                <p>Shredded slow-roasted spiced chicken chunks wrapped in pita bread with garlic sauce.</p>
+                <p class="price">PKR 180</p>
+            </div>
+            <div class="card">
+                <h3>Cheese Loaded Fries</h3>
+                <p>A generous plate of golden potato fries completely smothered in melted cheddar cheese sauce.</p>
+                <p class="price">PKR 250</p>
+            </div>
+        </div>
 
-  <main class="menu-page">
+        <!-- Category 3: Main Course -->
+        <h2 class="category-title">🍛 Main Course Cuisine</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Chicken Student Biryani</h3>
+                <p>Fragrant basmati rice layered with highly marinated chicken meat curry and spices.</p>
+                <p class="price">PKR 240</p>
+            </div>
+            <div class="card">
+                <h3>Chicken Karahi & Naan</h3>
+                <p>Traditional wok-cooked chicken in a rich tomato-based gravy, paired with a hot tandoori naan.</p>
+                <p class="price">PKR 350</p>
+            </div>
+            <div class="card">
+                <h3>Daal Chawal Platter</h3>
+                <p>Comfort food mix of yellow lentil soup served alongside boiled white rice and pickles.</p>
+                <p class="price">PKR 180</p>
+            </div>
+        </div>
 
-    <section class="menu-category" id="breakfast">
-      <h3><span class="cat-icon">🍳</span> Breakfast</h3>
-      <ul class="menu-list">
-        <li>
-          <div class="item-row"><span class="item-name">Halwa Puri</span><span class="item-dots"></span><span class="item-price">PKR 250</span></div>
-          <p class="item-desc">Crisp puri with sooji halwa and chana</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Anda Paratha</span><span class="item-dots"></span><span class="item-price">PKR 180</span></div>
-          <p class="item-desc">Flaky paratha with a fried egg</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Omelette with Toast</span><span class="item-dots"></span><span class="item-price">PKR 200</span></div>
-          <p class="item-desc">Two eggs, green chilli, buttered toast</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Chana Chaat</span><span class="item-dots"></span><span class="item-price">PKR 150</span></div>
-          <p class="item-desc">Tangy chickpeas with chutney</p>
-        </li>
-      </ul>
-    </section>
+        <!-- Category 4: Beverages & Desserts -->
+        <h2 class="category-title">🍹 Beverages & Desserts</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Doodh Patti Chai</h3>
+                <p>Strong, freshly brewed traditional university tea made with real creamy milk.</p>
+                <p class="price">PKR 70</p>
+            </div>
+            <div class="card">
+                <h3>Chilled Mint Margarita</h3>
+                <p>Refreshing blended drink containing fresh crushed mint leaves, lime juice, and carbonated soda.</p>
+                <p class="price">PKR 150</p>
+            </div>
+            <div class="card">
+                <h3>Chocolate Fudge Cake</h3>
+                <p>Rich and moist dark cocoa layered sponge cake slice served with a warm chocolate glaze.</p>
+                <p class="price">PKR 180</p>
+            </div>
+        </div>
+    </main>
 
-    <section class="menu-category" id="fast-food">
-      <h3><span class="cat-icon">🍔</span> Fast Food</h3>
-      <ul class="menu-list">
-        <li>
-          <div class="item-row"><span class="item-name">Zinger Burger</span><span class="item-dots"></span><span class="item-price">PKR 350</span></div>
-          <p class="item-desc">Crunchy fried chicken, mayo, lettuce</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Chicken Club Sandwich</span><span class="item-dots"></span><span class="item-price">PKR 300</span></div>
-          <p class="item-desc">Grilled chicken, egg and cheese</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">French Fries</span><span class="item-dots"></span><span class="item-price">PKR 150</span></div>
-          <p class="item-desc">Hot, salted, with ketchup</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Chicken Shawarma</span><span class="item-dots"></span><span class="item-price">PKR 250</span></div>
-          <p class="item-desc">Garlic sauce, pickles, soft pita</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-category" id="main-course">
-      <h3><span class="cat-icon">🍛</span> Main Course</h3>
-      <ul class="menu-list">
-        <li>
-          <div class="item-row"><span class="item-name">Chicken Biryani</span><span class="item-dots"></span><span class="item-price">PKR 320</span></div>
-          <p class="item-desc">Spiced rice, tender chicken, raita</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Chicken Karahi with Naan</span><span class="item-dots"></span><span class="item-price">PKR 450</span></div>
-          <p class="item-desc">Tomato and ginger karahi, fresh naan</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Daal Chawal</span><span class="item-dots"></span><span class="item-price">PKR 200</span></div>
-          <p class="item-desc">Tarka daal over steamed rice</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Beef Pulao</span><span class="item-dots"></span><span class="item-price">PKR 350</span></div>
-          <p class="item-desc">Fragrant pulao with kachumber salad</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-category" id="beverages-desserts">
-      <h3><span class="cat-icon">🥤</span> Beverages &amp; Desserts</h3>
-      <ul class="menu-list">
-        <li>
-          <div class="item-row"><span class="item-name">Mint Margarita</span><span class="item-dots"></span><span class="item-price">PKR 150</span></div>
-          <p class="item-desc">Fresh mint, lemon and soda</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Chai (Doodh Patti)</span><span class="item-dots"></span><span class="item-price">PKR 80</span></div>
-          <p class="item-desc">Strong, creamy and piping hot</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Cold Drink (345 ml)</span><span class="item-dots"></span><span class="item-price">PKR 100</span></div>
-          <p class="item-desc">Served chilled</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Gulab Jamun (2 pcs)</span><span class="item-dots"></span><span class="item-price">PKR 120</span></div>
-          <p class="item-desc">Warm and syrup-soaked</p>
-        </li>
-        <li>
-          <div class="item-row"><span class="item-name">Kheer</span><span class="item-dots"></span><span class="item-price">PKR 130</span></div>
-          <p class="item-desc">Slow-cooked rice pudding with pistachio</p>
-        </li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Campus Bites. University of Central Punjab.</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2026 Campus Bites - UCP Cafeteria Project. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
