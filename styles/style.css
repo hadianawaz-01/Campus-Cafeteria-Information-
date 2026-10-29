@@ -1,0 +1,223 @@
+/* ===== Menu Page Styles (Member 1) =====
+   Everything is scoped under .menu-body so it cannot clash
+   with other members' pages in the shared stylesheet. */
+
+.menu-body {
+  --ink: #1d3b2a;
+  --leaf: #2f6b47;
+  --saffron: #f2a93b;
+  --chilli: #c8402b;
+  --mint: #f2f7f1;
+  --card: #ffffff;
+  --muted: #5d6f63;
+  margin: 0;
+  background: var(--mint);
+  color: var(--ink);
+  font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header and navigation */
+.menu-body .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background: var(--ink);
+}
+
+.menu-body .brand {
+  font-family: "Bricolage Grotesque", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--saffron);
+  text-decoration: none;
+}
+
+.menu-body .site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.menu-body .site-header nav a {
+  color: #e6efe8;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.menu-body .site-header nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu-body .site-header nav a.active {
+  background: var(--saffron);
+  color: var(--ink);
+}
+
+/* Hero */
+.menu-hero {
+  text-align: center;
+  padding: 56px 20px 40px;
+  background: var(--leaf);
+  color: #ffffff;
+  background-image: radial-gradient(circle at 15% 20%, rgba(242, 169, 59, 0.28), transparent 45%),
+                    radial-gradient(circle at 85% 80%, rgba(200, 64, 43, 0.25), transparent 45%);
+}
+
+.menu-hero h2 {
+  margin: 0 0 8px;
+  font-family: "Bricolage Grotesque", Georgia, serif;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.menu-hero p {
+  margin: 0 auto 24px;
+  max-width: 480px;
+  font-size: 1.05rem;
+  opacity: 0.92;
+}
+
+.menu-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-jump a {
+  padding: 8px 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu-jump a:hover {
+  background: var(--saffron);
+  border-color: var(--saffron);
+  color: var(--ink);
+}
+
+/* Menu grid */
+.menu-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 48px 24px 56px;
+}
+
+.menu-category {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 26px 28px 20px;
+  border-top: 6px solid var(--saffron);
+  box-shadow: 0 10px 28px rgba(29, 59, 42, 0.08);
+  scroll-margin-top: 20px;
+}
+
+.menu-category:nth-child(2) { border-top-color: var(--chilli); }
+.menu-category:nth-child(3) { border-top-color: var(--leaf); }
+.menu-category:nth-child(4) { border-top-color: #7a4fa0; }
+
+.menu-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-family: "Bricolage Grotesque", Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cat-icon {
+  font-size: 1.5rem;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  padding: 10px 0;
+}
+
+.item-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.item-name {
+  font-weight: 700;
+}
+
+.item-dots {
+  flex: 1;
+  min-width: 16px;
+  border-bottom: 2px dotted #b9c8bd;
+  transform: translateY(-4px);
+}
+
+.item-price {
+  font-weight: 700;
+  color: var(--chilli);
+  white-space: nowrap;
+}
+
+.item-desc {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Footer */
+.menu-body .site-footer {
+  padding: 22px;
+  text-align: center;
+  background: var(--ink);
+  color: #c9d8cd;
+  font-size: 0.9rem;
+}
+
+.menu-body .site-footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .menu-page {
+    grid-template-columns: 1fr;
+    padding: 32px 16px 40px;
+  }
+  .menu-body .site-header {
+    padding: 14px 18px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero {
+    padding: 40px 16px 30px;
+  }
+  .menu-category {
+    padding: 20px 18px 14px;
+  }
+  .item-name,
+  .item-price {
+    font-size: 0.95rem;
+  }
+}
