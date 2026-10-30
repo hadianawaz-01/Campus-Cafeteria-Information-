@@ -1,0 +1,39 @@
+/* Feedback Page Styling */
+
+.contact-section,
+.feedback-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.feedback-section button {
+    padding: 12px;
+    background-color: #247348;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact-section,
+    .feedback-section {
+        margin: 15px;
+        padding: 18px;
+    }
+}
