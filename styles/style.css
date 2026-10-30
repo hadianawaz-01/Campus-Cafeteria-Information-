@@ -182,15 +182,12 @@ body.home-page nav a[aria-current="page"] {
         flex-direction: column;
         gap: 8px;
     }
-
     .home-btn {
         display: block;
         margin: 12px auto;
         max-width: 240px;
     }
-  }/* ===== Menu Page Styles (Member 1) =====
-   Everything is scoped under .menu-body so it cannot clash
-   with other members' pages in the shared stylesheet. */
+}
 
 .menu-body {
   --ink: #1d3b2a;
@@ -724,9 +721,66 @@ body.home-page nav a[aria-current="page"] {
   .deals-grid {
     grid-template-columns: 1fr;
   }
-  .deals-section-title {
+   .deals-section-title {
     font-size: 1.8rem;
   }
 }
 
-/* DEALS PAGE STYLES (deals.html) - END */
+/* Feedback Page Styling */
+
+.contact-section,
+.feedback-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feedback-section label {
+    font-weight: bold;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.feedback-section textarea {
+    resize: vertical;
+}
+
+.feedback-section button {
+    padding: 12px;
+    background-color: #247348;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-section button:hover {
+    background-color: #195536;
+}
+
+/* Responsive Feedback Page */
+@media (max-width: 768px) {
+    .contact-section,
+    .feedback-section {
+        margin: 15px;
+        padding: 18px;
+    }
+}
+
