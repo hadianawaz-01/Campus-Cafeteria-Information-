@@ -1016,3 +1016,125 @@ body.home-page nav a[aria-current="page"] {
         padding: 15px;
     }
 }
+
+/* Order Page Styles */
+
+body.order-page {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #30251f;
+    background-color: #fffaf4;
+}
+
+body.order-page nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+body.order-page nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.order-page nav a:hover,
+body.order-page nav a[aria-current="page"] {
+    color: #ffd08a;
+}
+
+.order-page main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.order-page section {
+    background-color: #ffffff;
+    margin-bottom: 22px;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ead8c7;
+    box-shadow: 0 2px 8px rgba(96, 59, 42, 0.06);
+}
+
+.order-page section h2 {
+    color: #603b2a;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.order-page section p {
+    margin-bottom: 10px;
+}
+
+.order-page .order-intro {
+    background-color: #f4e1ce;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.order-page .order-intro h2 {
+    font-size: 2rem;
+}
+
+.order-page ol,
+.order-page ul {
+    padding-left: 25px;
+}
+
+.order-page li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.order-page .order-steps li::marker {
+    color: #a94f22;
+    font-weight: bold;
+}
+
+.order-page .order-peak-hours {
+    background-color: #f8eee3;
+    border-left: 5px solid #a94f22;
+}
+
+/* Order Page Responsive */
+
+@media (max-width: 768px) {
+    body.order-page nav {
+        gap: 10px 16px;
+    }
+
+    .order-page main {
+        margin: 25px auto;
+    }
+
+    .order-page section {
+        padding: 20px;
+    }
+
+    .order-page .order-intro h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body.order-page nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .order-page main {
+        padding: 0 12px;
+    }
+
+    .order-page section {
+        padding: 16px;
+    }
+
+    .order-page .order-intro h2 {
+        font-size: 1.5rem;
+    }
+}
+
