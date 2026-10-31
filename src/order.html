@@ -4,34 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to order food at Campus Bites.">
     <title>How to Order | Campus Bites</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
 
-    <header>
-        <h1>Campus Bites</h1>
-        <p>Fresh Food, Happy Students!</p>
+<body class="order-page">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="deals.html">Deals</a>
-            <a href="order.html">How to Order</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
+    <header class="home-site-header">
+        <div class="home-container">
+            <h1>Campus Bites</h1>
+            <p class="home-tagline">Fresh Food, Happy Campus!</p>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="deals.html">Daily Deals</a>
+                <a href="order.html" aria-current="page">How to Order</a>
+                <a href="feedback.html">Feedback & Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="order-intro">
             <h2>How to Place Your Order</h2>
-            <p>Follow these simple steps to enjoy your favourite
-               food at Campus Bites.</p>
+            <p>
+                Follow these simple steps to enjoy your favourite
+                food at Campus Bites.
+            </p>
         </section>
 
         <section>
             <h2>Ordering Steps</h2>
-            <ol>
+            <ol class="order-steps">
                 <li>Visit our menu and choose your favourite food.</li>
                 <li>Place your order at the cafeteria counter.</li>
                 <li>Confirm your order and make the payment.</li>
@@ -60,15 +66,20 @@
             </ul>
         </section>
 
-        <section>
+        <section class="order-peak-hours">
             <h2>Peak Hours</h2>
-            <p>The cafeteria may be busy during lunch breaks.
-               Place your order early when possible.</p>
+            <p>
+                The cafeteria may be busy during lunch breaks.
+                Place your order early when possible.
+            </p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+    <footer class="home-site-footer">
+        <div class="home-container">
+            <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+            <p>Serving our campus community with care.</p>
+        </div>
     </footer>
 
 </body>

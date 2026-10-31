@@ -1,47 +1,173 @@
-/* Rana Husnain */
 
+/* Order-Page */
 
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #246b45;
-    color: white;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #30251f;
+    background-color: #fffaf4;
+}
+
+
+.home-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.home-site-header {
+    background-color: #603b2a;
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 25px 0;
+}
+
+.home-site-header h1 {
+    font-size: 2.2rem;
+}
+
+.home-tagline {
+    margin-bottom: 18px;
+    color: #ffe0b5;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    margin: 10px;
+    font-weight: bold;
 }
 
-main {
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #ffd08a;
+}
+
+/* Shared Footer */
+
+.home-site-footer {
+    background-color: #603b2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 0;
+    margin-top: 20px;
+}
+
+/* Order Page Styling */
+
+.order-page main {
     max-width: 900px;
-    margin: 25px auto;
+    margin: 35px auto;
     padding: 0 20px;
 }
 
-section {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
+.order-page section {
+    background-color: #ffffff;
+    margin-bottom: 22px;
+    padding: 25px;
     border-radius: 8px;
+    border: 1px solid #ead8c7;
+    box-shadow: 0 2px 8px rgba(96, 59, 42, 0.06);
 }
 
-li {
+.order-page section h2 {
+    color: #603b2a;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.order-page section p {
     margin-bottom: 10px;
 }
 
-footer {
+.order-page .order-intro {
+    background-color: #f4e1ce;
     text-align: center;
-    padding: 15px;
-    background-color: #246b45;
-    color: white;
+    padding: 35px 25px;
+}
+
+.order-page .order-intro h2 {
+    font-size: 2rem;
+}
+
+.order-page ol,
+.order-page ul {
+    padding-left: 25px;
+}
+
+.order-page li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.order-page .order-steps li::marker {
+    color: #a94f22;
+    font-weight: bold;
+}
+
+.order-page .order-peak-hours {
+    background-color: #f8eee3;
+    border-left: 5px solid #a94f22;
+}
+
+/* Responsive Layout - Tablets */
+
+@media (max-width: 768px) {
+    .home-site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 10px 16px;
+    }
+
+    .order-page main {
+        margin: 25px auto;
+    }
+
+    .order-page section {
+        padding: 20px;
+    }
+
+    .order-page .order-intro h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .home-site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .order-page main {
+        padding: 0 12px;
+    }
+
+    .order-page section {
+        padding: 16px;
+    }
+
+    .order-page .order-intro h2 {
+        font-size: 1.5rem;
+    }
 }
