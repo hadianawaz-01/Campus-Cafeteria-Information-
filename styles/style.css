@@ -1,77 +1,79 @@
+/* Home Page Styles */
 
-/* Campus Bites - Shared Stylesheet */
-
-* {
+body.home-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body.home-page {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #30251f;
     background-color: #fffaf4;
 }
 
-.container {
+.home-container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.site-header {
+/* Header */
+.home-site-header {
     background-color: #603b2a;
     color: #ffffff;
     text-align: center;
     padding: 25px 0;
 }
 
-.site-header h1 {
+.home-site-header h1 {
     font-size: 2.2rem;
 }
 
-.tagline {
+.home-tagline {
     margin-bottom: 18px;
     color: #ffe0b5;
 }
 
-nav {
+body.home-page nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px 24px;
 }
 
-nav a {
+body.home-page nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover,
-nav a[aria-current="page"] {
+body.home-page nav a:hover,
+body.home-page nav a[aria-current="page"] {
     color: #ffd08a;
 }
 
-.hero {
+/* Hero Section */
+.home-hero {
     background-color: #f4e1ce;
     text-align: center;
     padding: 75px 20px;
 }
 
-.hero h2 {
+.home-hero h2 {
     color: #603b2a;
     font-size: 2.2rem;
     margin-bottom: 15px;
 }
 
-.hero p {
+.home-hero p {
     max-width: 720px;
     margin: 0 auto 15px;
 }
 
-.btn {
+/* Buttons */
+.home-btn {
     display: inline-block;
     background-color: #a94f22;
     color: #ffffff;
@@ -81,57 +83,60 @@ nav a[aria-current="page"] {
     border-radius: 5px;
 }
 
-.btn:hover {
+.home-btn:hover {
     background-color: #783719;
 }
 
-.btn-secondary {
+.home-btn-secondary {
     background-color: #35634b;
 }
 
-.about,
+/* About and Links Sections */
+.home-about,
 .home-links {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.about h2,
+.home-about h2,
 .home-links h2 {
     color: #603b2a;
     margin-bottom: 15px;
 }
 
-.info-section {
+/* Information Section */
+.home-info-section {
     background-color: #f8eee3;
     padding: 40px 0;
 }
 
-.info-grid {
+.home-info-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
 }
 
-.info-card {
+.home-info-card {
     background-color: #ffffff;
     border: 1px solid #ead8c7;
     border-radius: 8px;
     padding: 22px;
 }
 
-.info-card h3 {
+.home-info-card h3 {
     color: #783719;
     margin-bottom: 10px;
 }
 
-.info-card a {
+.home-info-card a {
     display: inline-block;
     color: #8a3d18;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.site-footer {
+/* Footer */
+.home-site-footer {
     background-color: #603b2a;
     color: #ffffff;
     text-align: center;
@@ -139,44 +144,45 @@ nav a[aria-current="page"] {
     margin-top: 20px;
 }
 
-/* Responsive layout for tablets and mobile phones */
+/* Responsive Layout for Tablets */
 @media (max-width: 768px) {
-    .info-grid {
+    .home-info-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .hero {
+    .home-hero {
         padding: 50px 15px;
     }
 
-    .hero h2 {
+    .home-hero h2 {
         font-size: 1.8rem;
     }
 
-    nav {
+    body.home-page nav {
         gap: 10px 16px;
     }
 }
 
+/* Responsive Layout for Mobile Phones */
 @media (max-width: 480px) {
-    .info-grid {
+    .home-info-grid {
         grid-template-columns: 1fr;
     }
 
-    .site-header h1 {
+    .home-site-header h1 {
         font-size: 1.8rem;
     }
 
-    .hero h2 {
+    .home-hero h2 {
         font-size: 1.5rem;
     }
 
-    nav {
+    body.home-page nav {
         flex-direction: column;
         gap: 8px;
     }
 
-    .btn {
+    .home-btn {
         display: block;
         margin: 12px auto;
         max-width: 240px;
