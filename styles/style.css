@@ -229,13 +229,13 @@ body.home-page nav a[aria-current="page"] {
 ========================================= */
 
 .menu-body {
-    --ink: #1d3b2a;
-    --leaf: #2f6b47;
-    --saffron: #f2a93b;
-    --chilli: #c8402b;
-    --mint: #f2f7f1;
+    --ink: #603b2a;
+    --leaf: #a94f22;
+    --saffron: #ffd08a;
+    --chilli: #783719;
+    --mint: #fffaf4;
     --card: #ffffff;
-    --muted: #5d6f63;
+    --muted: #8a3d18;
 
     margin: 0;
     background: var(--mint);
@@ -486,11 +486,11 @@ body.home-page nav a[aria-current="page"] {
 ========================================= */
 
 .deals-page {
-    --deals-ink: #12343b;
-    --deals-ink-soft: #1d4b54;
-    --deals-saffron: #f6b93b;
-    --deals-chili: #d7263d;
-    --deals-mint: #f1f6f3;
+    --deals-ink: #603b2a;
+    --deals-ink-soft: #783719;
+    --deals-saffron: #ffd08a;
+    --deals-chili: #a94f22;
+    --deals-mint: #fffaf4;
     --deals-white: #ffffff;
 
     margin: 0;
@@ -701,7 +701,7 @@ body.home-page nav a[aria-current="page"] {
 }
 
 .deals-card-featured {
-    background-color: #fff6dc;
+    background-color: #f4e1ce;
     box-shadow: 6px 6px 0 var(--deals-chili);
     border-color: var(--deals-chili);
 }
